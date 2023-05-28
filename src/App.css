@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0d0d0d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app-header {
+  height: 70px;
+  background-color: #131313;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width : 767px) {
+  .app-header{
+    height: 100px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+@media screen and (min-width : 767px) {
+  .logo {
+    width: 170px;
+    height: auto;
+  }
+} 
+
+.body-section {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and  (min-width  : 767px) {
+  .body-section{
+    flex-direction: row;
+  } 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.side-bar {
+  background-color: #131313;
+  width: 100%;
+}
+
+@media screen and (min-width : 767px) {
+  .side-bar {
+    width: 12%;
+    min-height: 89vh;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.categories-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (min-width : 767px) {
+  .categories-list{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #131313;
+}
+
+.section-button:hover{
+  background-color: #6ec1e4;
+}
+.active-section-button {
+  color: #000000;
+  background-color: #fdad0e;
+}
+
+.section-data-container {
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width : 767px) {
+  .section-data-container{
+    width: 88%;
+    padding: 20px;
   }
 }
